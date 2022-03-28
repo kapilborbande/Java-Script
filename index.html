@@ -1,0 +1,144 @@
+<html>
+    <head>
+
+        <title>
+            JAVASCRIPT TUTORIAL
+        </title>
+    </head>
+    <body>
+        <h1>JAVASCRIPT TUTORIAL</h1>
+        <input type="text" id="myinput" value="Kapil" placeholder="Enter any number">
+        <button onclick="getName()">getName</button>
+        <br>
+        <input type="number" id="no1">
+        <input type="number" id="no2">
+        <button onclick="Addition()">Addition</button>
+        <button onclick="Substraction()">Substraction</button>
+        <button onclick="Multiplication()">Multiplication</button>
+        <button onclick="Division()">Division</button>
+        <button onclick="Modulus()">Modulus</button>
+        <h1 id="sol"></h1>
+
+        <script>
+        
+        
+        function getName()
+        {
+            console.log("Function Called");
+            var name=document.getElementById("myinput");
+        console.log(name.value);
+        }
+
+        function getvalue() 
+        {
+            var no1=document.getElementById("no1");
+           var no2 =document.getElementById("no2");
+
+        }
+        function Addition() 
+        {
+           getvalue();
+           var sum=parseFloat(no1.value)+ parseFloat(no2.value);
+           console.log(sum);
+           document.getElementById("sol").innerHTML=sum;
+        }
+
+        function Substraction() 
+        {
+           getvalue();
+           var sum1=parseFloat(no1.value)- parseFloat(no2.value);
+            console.log(sum1);
+            document.getElementById("sol").innerHTML=sum1;
+
+        }
+
+        function Multiplication() 
+        {
+            getvalue(); 
+           var sum2=parseFloat(no1.value)*parseFloat(no2.value);
+           console.log(sum2);
+           document.getElementById("sol").innerHTML=sum2;
+
+   
+        }
+
+        function Division() 
+        {
+            getvalue();
+           var sum3=parseFloat(no1.value)/parseFloat(no2.value);
+           console.log(sum3);
+           document.getElementById("sol").innerHTML=sum3;
+
+  
+        }
+
+        function  Modulus() 
+        {
+         getvalue();
+         var sum4=parseFloat(no1.value)%parseFloat(no2.value);
+         console.log(sum4); 
+         document.getElementById("sol").innerHTML=sum4;
+  
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        /*console.log("HELLO WORLD")
+        console.log("Addition",1+1)
+        console.log("Multiplication",5*5)
+        console.log("Substraction",10-5)
+        console.log("Division",10/5)
+        console.log(true+true)
+        console.log(true+false)
+
+        //This is Comment
+        
+        var a="Hello World";
+        console.log(a);
+
+        a=2;
+        console.log(a);
+
+        let b=200;
+        const c=300;*/
+
+
+        </script>
+    </body>
+</html>
